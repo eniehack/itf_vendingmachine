@@ -16,7 +16,6 @@
 		"@sveltejs/adapter-vercel": "^5.0.0",
 		"@sveltejs/kit": "^2.4.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.1",
-		"bulma": "^0.9.4",
 		"postcss": "^8.4.33",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
@@ -31,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"maplibre-gl": "^3.6.2",
+		"bulma": "^1.0.0",
 		"zod": "^3.22.4"
 	},
 	"packageManager": "pnpm@8.14.1"

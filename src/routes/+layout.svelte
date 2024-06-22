@@ -21,3 +21,8 @@
 		}
 	</style>
 </svelte:head>
+
+<style lang="scss">
+	@use 'bulma/sass/base';
+	@use 'bulma/sass/themes';
+</style>
