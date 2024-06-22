@@ -18,6 +18,7 @@
 				<span aria-hidden="true" />
 				<span aria-hidden="true" />
 				<span aria-hidden="true" />
+				<span aria-hidden="true" />
 			</span>
 		</div>
 		<div id="navbar-content" class="navbar-menu" class:is-active={is_navbar_toggled}>
@@ -33,7 +34,5 @@
 </header>
 
 <style lang="scss">
-	@import 'bulma/sass/utilities/controls.sass';
-	@import 'bulma/sass/utilities/extends.sass';
-	@import 'bulma/sass/components/navbar.sass';
+	@use 'bulma/sass/components/navbar';
 </style>

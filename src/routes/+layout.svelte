@@ -13,7 +13,8 @@
 		body {
 			margin: 0;
 			padding: 0;
-  			font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+			font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo,
+				sans-serif;
 		}
 		html,
 		body {
@@ -21,3 +22,8 @@
 		}
 	</style>
 </svelte:head>
+
+<style lang="scss">
+	@use 'bulma/sass/base';
+	@use 'bulma/sass/themes';
+</style>
