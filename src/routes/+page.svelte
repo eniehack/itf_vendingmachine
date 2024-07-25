@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	//import { VERCEL_URL } from "$env/static/private";
-	import { Map as MLMap, GeolocateControl, NavigationControl } from 'maplibre-gl';
+	import ml from 'maplibre-gl';
 	import { here, insertMarker } from '$lib/geo';
 	//import BottleImage from "$lib/assets/bottle.png";
 	import { base } from '$app/paths';
@@ -9,27 +9,27 @@
 	import { browser } from '$app/environment';
 	import type { PageData } from './$types';
 
-	let map: MLMap;
+	let map: ml.Map;
 	let mapElem: HTMLDivElement;
 	export let data: PageData;
 
 	if (browser) {
 		onMount(async () => {
-			map = new MLMap({
+			map = new ml.Map({
 				container: mapElem,
 				style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json',
 				center: $here,
 				zoom: 13
 			});
 			map.addControl(
-				new GeolocateControl({
+				new ml.GeolocateControl({
 					positionOptions: {
 						enableHighAccuracy: true
 					},
 					trackUserLocation: true
 				})
 			);
-			map.addControl(new NavigationControl());
+			map.addControl(new ml.NavigationControl());
 
 			/*
 			const bottleIcon = icon({

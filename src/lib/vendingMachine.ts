@@ -1,6 +1,6 @@
 import { readable, type Readable } from 'svelte/store';
 import type { GeoJSONFeature } from './geojson';
-import { LngLat } from 'maplibre-gl';
+import ml from 'maplibre-gl';
 
 type VendingMachineAsObject = {
 	tags: Object;
@@ -18,8 +18,8 @@ export class VendingMachine {
 		[this.lng, this.lat] = elem.geometry.coordinates;
 	}
 
-	getPosition(): LngLat {
-		return new LngLat(this.lng, this.lat);
+	getPosition(): ml.LngLat {
+		return new ml.LngLat(this.lng, this.lat);
 	}
 
 	getPaymentsType(): string[] {
