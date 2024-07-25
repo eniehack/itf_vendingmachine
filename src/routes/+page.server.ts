@@ -2,6 +2,7 @@ import { error } from '@sveltejs/kit';
 import type { GeoJSONFeature, GeoJSONRoot } from '$lib/geojson';
 import type { PageServerLoad } from './$types';
 import { payload, type OSMObject } from '$lib/overpass';
+import * as v from 'valibot';
 
 const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
 	let features = nodes.map((elem: OSMObject): GeoJSONFeature => {
@@ -42,12 +43,12 @@ out;`;
 		error(500, '自動販売機データの取得に失敗しました\nリロードしてください');
 	}
 
-	let json = payload.safeParse(await resp.json());
+	const json = v.safeParse(payload, await resp.json());
 	if (!json.success) {
 		error(500, '自動販売機データの取得に失敗しました\nリロードしてください');
 	}
 	setHeaders({
 		'Cache-Control': 'max-age=43200, public, s-maxage=300, stale-while-revalidate=300'
 	});
-	return makeGeoJSON(json.data.elements);
+	return makeGeoJSON(json.output.elements);
 }) satisfies PageServerLoad;
