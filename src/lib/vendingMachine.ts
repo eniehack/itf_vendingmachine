@@ -89,7 +89,7 @@ export class VendingMachine {
 		let text = `<p>売っているもの: ${this.getHumanizedVendingType()}</p>`;
 		text += `<p>決済手段: ${this.getHumanizedPaymentsType().toString()}</p>`;
 		if (this.isIndoor() && typeof this.tags.get('level') !== 'undefined') {
-			const level = Number(this.tags.get('level')) + 1
+			const level = Number(this.tags.get('level')) + 1;
 			text += `<p>${level.toString()}階</p>`;
 		}
 		return text;

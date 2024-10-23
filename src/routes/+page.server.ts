@@ -8,13 +8,10 @@ const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
 	const features = nodes.map((elem: OSMObject): GeoJSONFeature => {
 		return {
 			type: 'Feature',
-			properties: Object.keys(elem.tags).reduce<Record<string, string>>(
-				(acc, key) => {
-					acc[key] = elem.tags[key];
-					return acc;
-				},
-				{}
-			),
+			properties: Object.keys(elem.tags).reduce<Record<string, string>>((acc, key) => {
+				acc[key] = elem.tags[key];
+				return acc;
+			}, {}),
 			geometry: {
 				coordinates: [elem.lon, elem.lat],
 				type: 'Point'

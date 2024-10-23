@@ -19,7 +19,7 @@
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
-		</button>
+			</button>
 		</div>
 		<div id="navbar-content" class="navbar-menu" class:is-active={is_navbar_toggled}>
 			<div class="navbar-start">
