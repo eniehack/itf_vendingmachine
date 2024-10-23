@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-vercel';
-import sveltePreprocess from 'svelte-preprocess';
+import { sveltePreprocess } from 'svelte-preprocess';
 import purgecss from '@fullhuman/postcss-purgecss';
 
 /** @type {import('@sveltejs/kit').Config} */

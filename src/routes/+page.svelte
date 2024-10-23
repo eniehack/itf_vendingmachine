@@ -10,11 +10,15 @@
 	import type { PageData } from './$types';
 
 	let map: ml.Map;
-	let mapElem: HTMLDivElement;
-	export let data: PageData;
+	let mapElem: HTMLDivElement = $state();
+	interface Props {
+		data: PageData;
+	}
+
+	const { data }: Props = $props();
 
 	if (browser) {
-		onMount(async () => {
+		onMount(() => {
 			map = new ml.Map({
 				container: mapElem,
 				style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json',
@@ -58,7 +62,7 @@
 </svelte:head>
 
 <div id="map-container">
-	<div id="map" bind:this={mapElem} />
+	<div id="map" bind:this={mapElem}></div>
 </div>
 
 <style lang="scss">

@@ -1,12 +1,11 @@
-import { readable, type Readable } from 'svelte/store';
 import type { GeoJSONFeature } from './geojson';
 import ml from 'maplibre-gl';
 
-type VendingMachineAsObject = {
-	tags: Object;
+interface VendingMachineAsObject {
+	tags: object;
 	lat: number;
 	lon: number;
-};
+}
 
 export class VendingMachine {
 	private tags: Map<string, string>;
@@ -23,7 +22,7 @@ export class VendingMachine {
 	}
 
 	getPaymentsType(): string[] {
-		let payments: string[] = [];
+		const payments: string[] = [];
 		this.tags.forEach((v, k) => {
 			if (k.startsWith('payment:') && v === 'yes') {
 				payments.push(k.substring(8));
@@ -33,7 +32,7 @@ export class VendingMachine {
 	}
 
 	getHumanizedPaymentsType(): string[] {
-		let payments = this.getPaymentsType();
+		const payments = this.getPaymentsType();
 		const payment_map = new Map<string, string>([
 			['icsf', '交通系ICカード'],
 			['d_barai', 'd払い'],
@@ -51,7 +50,7 @@ export class VendingMachine {
 		}
 
 		return payments.map((payment) => {
-			let exist = payment_map.get(payment);
+			const exist = payment_map.get(payment);
 			if (typeof exist === 'string') {
 				return exist;
 			} else {
@@ -88,16 +87,17 @@ export class VendingMachine {
 
 	generatePopupText(): string {
 		let text = `<p>売っているもの: ${this.getHumanizedVendingType()}</p>`;
-		text += `<p>決済手段: ${this.getHumanizedPaymentsType()}</p>`;
+		text += `<p>決済手段: ${this.getHumanizedPaymentsType().toString()}</p>`;
 		if (this.isIndoor() && typeof this.tags.get('level') !== 'undefined') {
-			text += `<p>${Number(this.tags.get('level')) + 1}階</p>`;
+			const level = Number(this.tags.get('level')) + 1;
+			text += `<p>${level.toString()}階</p>`;
 		}
 		return text;
 	}
 
 	toObject(): VendingMachineAsObject {
-		let tags: Object = {};
-		for (let [k, v] of this.tags.entries()) tags = { ...tags, [k]: v };
+		let tags: object = {};
+		for (const [k, v] of this.tags.entries()) tags = { ...tags, [k]: v };
 
 		return {
 			lat: this.lat,

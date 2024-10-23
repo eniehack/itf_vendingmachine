@@ -1,25 +1,25 @@
 <script lang="ts">
-	var is_navbar_toggled = false;
+	let is_navbar_toggled = $state(false);
 </script>
 
 <header>
-	<nav class="navbar" role="navigation" aria-label="main navigation">
+	<nav class="navbar" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item" href="/"> 筑波大自販機Map </a>
-			<span
-				role="button"
+			<button
 				class="navbar-burger"
 				aria-label="menu"
-				aria-expanded="false"
+				aria-expanded={is_navbar_toggled}
 				data-target="navbar-content"
+				tabindex="0"
 				class:is-active={is_navbar_toggled}
-				on:click={() => (is_navbar_toggled = !is_navbar_toggled)}
+				onclick={() => (is_navbar_toggled = !is_navbar_toggled)}
 			>
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-			</span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
 		</div>
 		<div id="navbar-content" class="navbar-menu" class:is-active={is_navbar_toggled}>
 			<div class="navbar-start">

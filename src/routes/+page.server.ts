@@ -5,13 +5,13 @@ import { payload, type OSMObject } from '$lib/overpass';
 import * as v from 'valibot';
 
 const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
-	let features = nodes.map((elem: OSMObject): GeoJSONFeature => {
+	const features = nodes.map((elem: OSMObject): GeoJSONFeature => {
 		return {
 			type: 'Feature',
-			properties: Object.keys(elem.tags).reduce((acc, key) => {
-				acc[key] = elem.tags[key] as string;
+			properties: Object.keys(elem.tags).reduce<Record<string, string>>((acc, key) => {
+				acc[key] = elem.tags[key];
 				return acc;
-			}, {} as Record<string, string>),
+			}, {}),
 			geometry: {
 				coordinates: [elem.lon, elem.lat],
 				type: 'Point'
@@ -25,7 +25,7 @@ const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
 };
 
 export const load = (async ({ fetch, setHeaders }): Promise<GeoJSONRoot> => {
-	const query: string = `[out:json][timeout:25];
+	const query = `[out:json][timeout:25];
 way(id:183555030);
 map_to_area-> .ulis;
 way(id:183555029);
@@ -38,7 +38,7 @@ out;`;
 
 	const endpoint = new URL('https://overpass-api.de/api/interpreter');
 	endpoint.searchParams.set('data', query);
-	let resp = await fetch(endpoint);
+	const resp = await fetch(endpoint);
 	if (!resp.ok) {
 		error(500, '自動販売機データの取得に失敗しました\nリロードしてください');
 	}
