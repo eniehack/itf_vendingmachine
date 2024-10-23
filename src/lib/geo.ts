@@ -7,7 +7,7 @@ export const here: Writable<ml.LngLat> = writable(new ml.LngLat(140.1019, 36.107
 
 export const insertMarker = (map: ml.Map, features: GeoJSONFeature[], el: HTMLDivElement) => {
 	features.forEach((obj) => {
-		let vm = new VendingMachine(obj);
+		const vm = new VendingMachine(obj);
 		el.setAttribute('class', 'marker');
 		/*
         el.style.backgroundImage = `url(http://${window.location.host}${BottleImage})`;

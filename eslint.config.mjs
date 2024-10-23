@@ -12,6 +12,7 @@ const tsconfig = tseslint.config({
 		...tseslint.configs.stylisticTypeChecked,
 		...svelte.configs['flat/recommended']
 	],
+	ignores: ["svelte.config.js"],
 	languageOptions: {
 		globals: globals.browser,
 		parser: tseslint.parser,
@@ -48,6 +49,6 @@ export default [
 	},
 	...tsconfig,
 	...svelteConfig,
-  jsConfig,
-  configConfig,
+	jsConfig,
+	configConfig
 ];

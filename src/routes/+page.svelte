@@ -15,10 +15,10 @@
 		data: PageData;
 	}
 
-	let { data }: Props = $props();
+	const { data }: Props = $props();
 
 	if (browser) {
-		onMount(async () => {
+		onMount(() => {
 			map = new ml.Map({
 				container: mapElem,
 				style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json',
