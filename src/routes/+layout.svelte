@@ -1,11 +1,16 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <Header />
 
 <main>
-	<slot />
+	{@render children?.()}
 </main>
 
 <svelte:head>

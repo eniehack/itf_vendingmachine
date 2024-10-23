@@ -1,5 +1,5 @@
 <script lang="ts">
-	var is_navbar_toggled = false;
+	var is_navbar_toggled = $state(false);
 </script>
 
 <header>
@@ -13,12 +13,12 @@
 				aria-expanded="false"
 				data-target="navbar-content"
 				class:is-active={is_navbar_toggled}
-				on:click={() => (is_navbar_toggled = !is_navbar_toggled)}
+				onclick={() => (is_navbar_toggled = !is_navbar_toggled)}
 			>
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
 			</span>
 		</div>
 		<div id="navbar-content" class="navbar-menu" class:is-active={is_navbar_toggled}>

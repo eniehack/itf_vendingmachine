@@ -10,8 +10,12 @@
 	import type { PageData } from './$types';
 
 	let map: ml.Map;
-	let mapElem: HTMLDivElement;
-	export let data: PageData;
+	let mapElem: HTMLDivElement = $state();
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	if (browser) {
 		onMount(async () => {
@@ -58,7 +62,7 @@
 </svelte:head>
 
 <div id="map-container">
-	<div id="map" bind:this={mapElem} />
+	<div id="map" bind:this={mapElem}></div>
 </div>
 
 <style lang="scss">
