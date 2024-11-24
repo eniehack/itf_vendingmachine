@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {}
 	},
-	//darkMode: 'selector',
+	darkMode: 'selector',
 	plugins: [
 		import('@tailwindcss/typography'),
 	]
