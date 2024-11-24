@@ -8,6 +8,7 @@
 	import ogpImage from '$lib/assets/ogp.jpg';
 	import { browser } from '$app/environment';
 	import type { PageData } from './$types';
+	import 'maplibre-gl/dist/maplibre-gl.css';
 
 	let map: ml.Map;
 	let mapElem = $state<HTMLDivElement>();
@@ -106,9 +107,11 @@
 		{/if}
 	</span>
 </div>
+<div id="map-container">
+	<div id="map" bind:this={mapElem}></div>
+</div>
 
 <style lang="scss">
-	@import 'maplibre-gl/dist/maplibre-gl.css';
 	#map {
 		height: 100%;
 		width: 100vw;
