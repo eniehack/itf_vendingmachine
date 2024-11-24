@@ -10,7 +10,7 @@
 	import type { PageData } from './$types';
 
 	let map: ml.Map;
-	let mapElem: HTMLDivElement = $state();
+	let mapElem = $state<HTMLDivElement>();
 	interface Props {
 		data: PageData;
 	}
@@ -18,7 +18,8 @@
 	const { data }: Props = $props();
 
 	if (browser) {
-		onMount(() => {
+		$effect(() => {
+			if (typeof mapElem === "undefined") return
 			map = new ml.Map({
 				container: mapElem,
 				style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json',
