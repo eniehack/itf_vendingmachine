@@ -19,9 +19,11 @@
 		"@sveltejs/adapter-vercel": "^5.4.8",
 		"@sveltejs/kit": "^2.8.2",
 		"@sveltejs/vite-plugin-svelte": "^4.0.1",
+		"bulma": "^1.0.2",
 		"eslint": "~9.15.0",
 		"eslint-plugin-svelte": "^2.46.0",
 		"globals": "^15.12.0",
+		"maplibre-gl": "^4.7.1",
 		"postcss": "^8.4.49",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.3.2",
@@ -36,9 +38,5 @@
 		"vite": "^5.4.11"
 	},
 	"type": "module",
-	"dependencies": {
-		"bulma": "^1.0.2",
-		"maplibre-gl": "^4.7.1"
-	},
 	"packageManager": "pnpm@8.14.1"
 }
