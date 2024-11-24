@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
+	import '../app.css';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -27,8 +28,3 @@
 		}
 	</style>
 </svelte:head>
-
-<style lang="scss">
-	@use 'bulma/sass/base';
-	@use 'bulma/sass/themes';
-</style>

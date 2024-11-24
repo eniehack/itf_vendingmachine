@@ -1,25 +1,11 @@
 import adapter from '@sveltejs/adapter-vercel';
-import { sveltePreprocess } from 'svelte-preprocess';
-import purgecss from '@fullhuman/postcss-purgecss';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: [
-		sveltePreprocess({
-			postcss: {
-				plugins: [
-					purgecss({
-						content: ['./src/**/*.html', './src/**/*.svelte'],
-						whitelistPatterns: [/svelte-/],
-						defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-						safelist: ['is-active']
-					})
-				]
-			}
-		})
-	],
+	preprocess: vitePreprocess(),
 
 	kit: {
 		adapter: adapter({
