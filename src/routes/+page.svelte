@@ -66,6 +66,9 @@
 	<meta name="twitter:card" content="summary" />
 </svelte:head>
 
+<div id="map-container">
+	<div id="map" bind:this={mapElem}></div>
+</div>
 <div
 	class="absolute top-[13rem] right-2.5 bg-white rounded size-[29px]"
 	onclick={() => {
@@ -106,9 +109,6 @@
 			</svg>
 		{/if}
 	</span>
-</div>
-<div id="map-container">
-	<div id="map" bind:this={mapElem}></div>
 </div>
 
 <style lang="scss">
