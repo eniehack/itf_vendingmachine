@@ -5,7 +5,5 @@ export default {
 		extend: {}
 	},
 	darkMode: 'selector',
-	plugins: [
-		import('@tailwindcss/typography'),
-	]
+	plugins: [import('@tailwindcss/typography')]
 };

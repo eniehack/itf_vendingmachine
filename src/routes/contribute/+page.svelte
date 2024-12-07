@@ -4,14 +4,13 @@
 </script>
 
 <article class="prose">
-	<h1 class="p-5 text-2xl font-bold">
-		このサイトへ貢献する
-	</h1>
+	<h1 class="p-5 text-2xl font-bold">このサイトへ貢献する</h1>
 	<section class="p-4">
 		<h2 class="text-xl font-semibold">自動販売機の報告</h2>
 		<p class="p-3">
-			このサイトでは、自動販売機のデータ、地図データを<a class="text-sky-500 hover:underline" href="https://openstreetmap.org/"
-				>OpenStreetMap</a
+			このサイトでは、自動販売機のデータ、地図データを<a
+				class="text-sky-500 hover:underline"
+				href="https://openstreetmap.org/">OpenStreetMap</a
 			>から取得しています。
 			OpenStreetMapにユーザ登録をして、自動販売機のデータを追加することもできます。
 		</p>
@@ -23,17 +22,25 @@
 	<section class="p-4">
 		<h2 class="text-2xl font-semibold">開発に参加する</h2>
 		<p class="p-3">
-			このサイトは<a class="text-sky-500 hover:underline" href="https://github.com/eniehack/itf-vendingmachine">GitHub</a
+			このサイトは<a
+				class="text-sky-500 hover:underline"
+				href="https://github.com/eniehack/itf-vendingmachine">GitHub</a
 			>にて、オープンソースソフトウェアとして公開されています。 Pull Request歓迎です。
 		</p>
 	</section>
 	<section class="p-4">
 		<h2 class="text-2xl font-semibold">バグ等の報告、機能の提案</h2>
 		<p class="p-3">
-			<a class="text-sky-500 hover:underline" href="https://github.com/eniehack/itf-vendingmachine/issues">GitHubのissue</a
+			<a
+				class="text-sky-500 hover:underline"
+				href="https://github.com/eniehack/itf-vendingmachine/issues">GitHubのissue</a
 			>から、または、Twitterハッシュタグ
-			<a class="text-sky-500 hover:underline" href="https://twitter.com/hashtag/itf_vendingmachine_map">#itf_vendingmachinemap</a>
-			、<a class="text-sky-500 hover:underline"
+			<a
+				class="text-sky-500 hover:underline"
+				href="https://twitter.com/hashtag/itf_vendingmachine_map">#itf_vendingmachinemap</a
+			>
+			、<a
+				class="text-sky-500 hover:underline"
 				href="https://twitter.com/hashtag/%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E8%87%AA%E8%B2%A9%E6%A9%9FMap"
 				>#筑波大学自販機Map</a
 			> を付けて投稿してください。

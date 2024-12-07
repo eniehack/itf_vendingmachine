@@ -13,7 +13,6 @@
 					class="inline-flex rounded-md dark:text-neutral-200 focus:outline-none"
 					aria-label="menu"
 					aria-expanded={is_navbar_toggled}
-
 					data-target="navbar-content"
 					tabindex="0"
 					onclick={() => (is_navbar_toggled = !is_navbar_toggled)}
@@ -49,27 +48,19 @@
 				</button>
 			</div>
 			<div class="hidden md:flex">
-				<a href="/about" class="p-2 dark:text-neutral-200">about</a
-				>
-				<a href="/contribute" class="p-2 dark:text-neutral-200"
-					>このサイトに貢献する</a
-				>
-				<a
-					href="https://github.com/eniehack/itf-vendingmachine"
-					class="p-2 dark:text-neutral-200">GitHub</a
+				<a href="/about" class="p-2 dark:text-neutral-200">about</a>
+				<a href="/contribute" class="p-2 dark:text-neutral-200">このサイトに貢献する</a>
+				<a href="https://github.com/eniehack/itf-vendingmachine" class="p-2 dark:text-neutral-200"
+					>GitHub</a
 				>
 			</div>
 		</div>
 		{#if is_navbar_toggled}
 			<div id="navbar-content" class="md:hidden flex flex-col block">
-				<a href="/about" class="p-2 dark:text-neutral-200">about</a
-				>
-				<a href="/contribute" class="p-2 dark:text-neutral-200"
-					>このサイトに貢献する</a
-				>
-				<a
-					href="https://github.com/eniehack/itf-vendingmachine"
-					class="p-2 dark:text-neutral-200">GitHub</a
+				<a href="/about" class="p-2 dark:text-neutral-200">about</a>
+				<a href="/contribute" class="p-2 dark:text-neutral-200">このサイトに貢献する</a>
+				<a href="https://github.com/eniehack/itf-vendingmachine" class="p-2 dark:text-neutral-200"
+					>GitHub</a
 				>
 			</div>
 		{/if}
