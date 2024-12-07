@@ -1,0 +1,1050 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "vending": "drinks" },
+			"geometry": { "coordinates": [140.1029172, 36.1112954], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "セブンティーンアイス",
+				"brand:en": "Seventeen Ice",
+				"brand:ja": "セブンティーンアイス",
+				"brand:wikidata": "Q11314427",
+				"name": "セブンティーンアイス",
+				"name:en": "Seventeen Ice",
+				"name:ja": "セブンティーンアイス",
+				"payment:coins": "yes",
+				"payment:notes": "yes",
+				"vending": "ice_cream"
+			},
+			"geometry": { "coordinates": [140.106818, 36.0869258], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1068221, 36.0869186], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"level": "1",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"payment:alipay": "yes",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:line_pay": "yes",
+				"payment:merpay": "yes",
+				"payment:nanaco": "yes",
+				"payment:paypay": "yes",
+				"payment:quicpay": "yes",
+				"payment:rakuten_pay": "yes",
+				"payment:waon": "yes",
+				"payment:wechat": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1000731, 36.1105399], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1031576, 36.1022332], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1019463, 36.1090079], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1019399, 36.1090185], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "FVイーストジャパン株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1028022, 36.1048648], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks",
+				"wheelchair": "yes"
+			},
+			"geometry": { "coordinates": [140.1017179, 36.1082828], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1017523, 36.108301], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1027996, 36.1084059], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1028063, 36.1083981], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"indoor": "yes",
+				"level": "0",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1006656, 36.1103366], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"indoor": "yes",
+				"level": "0",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1006754, 36.1103233], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"indoor": "yes",
+				"level": "0",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks",
+				"wheelchair": "yes"
+			},
+			"geometry": { "coordinates": [140.1006952, 36.1103322], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"level": "0",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1052039, 36.0943331], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"operator": "EVイーストジャパン株式会社",
+				"payment:cash": "yes",
+				"vending": "bread"
+			},
+			"geometry": { "coordinates": [140.0992885, 36.1111764], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.0992716, 36.111171], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.0992579, 36.1111687], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1053438, 36.1018529], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1051265, 36.1032436], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1037158, 36.1031166], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "bread"
+			},
+			"geometry": { "coordinates": [140.101155, 36.1096943], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "bread"
+			},
+			"geometry": { "coordinates": [140.0995888, 36.1101699], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.0995977, 36.1101519], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1011601, 36.1096887], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:quicpay": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks",
+				"wheelchair": "yes"
+			},
+			"geometry": { "coordinates": [140.1011485, 36.1111094], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1035294, 36.1087167], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"indoor": "yes",
+				"level": "0",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.103541, 36.1087002], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"operator": "FVイーストジャパン株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1026523, 36.1082917], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "food"
+			},
+			"geometry": { "coordinates": [140.1067245, 36.0868512], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1011492, 36.1113553], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1011367, 36.1113525], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1011241, 36.1113479], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1011582, 36.1111013], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1067223, 36.0868441], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "株式会社八洋柏営業所",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:line_pay": "yes",
+				"payment:merpay": "yes",
+				"payment:paypay": "yes",
+				"payment:quicpay": "yes",
+				"payment:rakuten_pay": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1045811, 36.0962538], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"payment:cash": "yes",
+				"vending": "food"
+			},
+			"geometry": { "coordinates": [140.1045911, 36.0962527], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "セブンティーンアイス",
+				"brand:en": "Seventeen Ice",
+				"brand:ja": "セブンティーンアイス",
+				"brand:wikidata": "Q11314427",
+				"name": "セブンティーンアイス",
+				"name:en": "Seventeen Ice",
+				"name:ja": "セブンティーンアイス",
+				"operator": "FVイーストジャパン株式会社",
+				"payment:cash": "yes",
+				"vending": "ice_cream"
+			},
+			"geometry": { "coordinates": [140.1037342, 36.0978321], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "アサヒ飲料販売株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1045451, 36.0962535], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes"
+			},
+			"geometry": { "coordinates": [140.1037552, 36.0978314], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "株式会社アペックス 土浦営業所",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.104604, 36.096253], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.103746, 36.0978321], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:quicpay": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks",
+				"wheelchair": "yes"
+			},
+			"geometry": { "coordinates": [140.103766, 36.0978311], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "0",
+				"operator": "アサヒ飲料販売株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.104566, 36.096254], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"indoor": "yes",
+				"level": "1",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1065701, 36.0855317], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.0989011, 36.1185362], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "サントリー",
+				"brand:en": "Suntory",
+				"brand:ja": "サントリー",
+				"brand:wikidata": "Q1345267",
+				"indoor": "yes",
+				"level": "0",
+				"name": "サントリー",
+				"name:en": "Suntory",
+				"name:ja": "サントリー",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1016396, 36.1107154], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"ref": "30961054",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1019061, 36.1111292], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"currency:JPY": "yes",
+				"payment:cash": "yes",
+				"vending": "drinks;food;sweets"
+			},
+			"geometry": { "coordinates": [140.0997809, 36.1090459], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"operator": "株式会社オリエンタル商事 つくば営業所",
+				"payment:cash": "yes",
+				"payment:icsf": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1033732, 36.0991323], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"payment:cash": "yes",
+				"vending": "sweets"
+			},
+			"geometry": { "coordinates": [140.1018604, 36.11172], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"floor": "1",
+				"indoor": "yes",
+				"payment:cash": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1018785, 36.1117295], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"ref": "02031648",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1030443, 36.1033675], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"payment:au_pay": "yes",
+				"payment:cash": "yes",
+				"payment:d_barai": "yes",
+				"payment:icsf": "yes",
+				"payment:jcoin_pay": "yes",
+				"payment:paypay": "yes",
+				"payment:rakuten_pay": "yes",
+				"vending": "drinks",
+				"wheelchair": "yes"
+			},
+			"geometry": { "coordinates": [140.1030512, 36.1033664], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"payment:cash": "yes",
+				"ref": "N42107802",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1030586, 36.1033678], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"drink:coffee": "yes",
+				"drink:energy_drink": "yes",
+				"drink:juice": "yes",
+				"drink:tea": "yes",
+				"drink:water": "yes",
+				"indoor": "yes",
+				"level": "1",
+				"payment:cash": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:rakuten_edy": "yes",
+				"payment:waon": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1030674, 36.1033687], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"indoor": "yes",
+				"level": "1",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"ref": "30961156",
+				"vending": "foods"
+			},
+			"geometry": { "coordinates": [140.1030326, 36.1033666], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"brand": "コカ・コーラ",
+				"brand:en": "Coca-Cola",
+				"brand:ja": "コカ・コーラ",
+				"brand:wikidata": "Q2813",
+				"drink:cola": "yes",
+				"indoor": "yes",
+				"level": "0",
+				"name": "コカ・コーラ",
+				"name:en": "Coca-Cola",
+				"name:ja": "コカ・コーラ",
+				"operator": "コカ・コーラボトラーズジャパンベンディング株式会社",
+				"payment:cash": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"payment:waon": "yes",
+				"ref": "3915324137",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1024418, 36.1102962], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"name": "ジャパンビバレッジ",
+				"operator": "サントリービバレッジソリューション株式会社",
+				"payment:cash": "yes",
+				"ref": "30961097"
+			},
+			"geometry": { "coordinates": [140.1072378, 36.1041432], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"currency:JPY": "yes",
+				"drink:coffee": "yes",
+				"drink:cola": "yes",
+				"drink:energy_drink": "yes",
+				"drink:juice": "yes",
+				"drink:soft_drink": "yes",
+				"drink:tea": "yes",
+				"drink:water": "yes",
+				"payment:app": "yes",
+				"payment:cash": "yes",
+				"payment:contactless": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.100293, 36.1079638], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "vending": "drinks" },
+			"geometry": { "coordinates": [140.1040374, 36.1112933], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "vending": "drinks" },
+			"geometry": { "coordinates": [140.1040993, 36.1112977], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"name": "コカ・コーラ",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"payment:edy": "yes",
+				"payment:icsf": "yes",
+				"payment:id": "yes",
+				"payment:nanaco": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1058538, 36.0880141], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"name": "コカ・コーラ",
+				"payment:cash": "yes"
+			},
+			"geometry": { "coordinates": [140.1063796, 36.0863684], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"name": "コカ・コーラ",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes"
+			},
+			"geometry": { "coordinates": [140.106386, 36.0863607], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"name": "コカ・コーラ",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.1028224, 36.1083533], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "payment:cash": "yes", "vending": "drinks" },
+			"geometry": { "coordinates": [140.1028187, 36.1083618], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "vending": "ice_cream" },
+			"geometry": { "coordinates": [140.1000054, 36.1088122], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"amenity": "vending_machine",
+				"payment:cash": "yes",
+				"payment:coke_on_pay": "yes",
+				"vending": "drinks"
+			},
+			"geometry": { "coordinates": [140.09997, 36.1088002], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "vending": "bread" },
+			"geometry": { "coordinates": [140.0999856, 36.1088059], "type": "Point" }
+		},
+		{
+			"type": "Feature",
+			"properties": { "amenity": "vending_machine", "payment:cash": "yes", "vending": "drinks" },
+			"geometry": { "coordinates": [140.0999557, 36.1087978], "type": "Point" }
+		}
+	]
+}

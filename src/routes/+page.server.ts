@@ -3,6 +3,7 @@ import type { GeoJSONFeature, GeoJSONRoot } from '$lib/geojson';
 import type { PageServerLoad } from './$types';
 import { payload, type OSMObject } from '$lib/overpass';
 import * as v from 'valibot';
+import vm from '$lib/assets/vm.json';
 
 const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
 	const features = nodes.map((elem: OSMObject): GeoJSONFeature => {
@@ -25,6 +26,7 @@ const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
 };
 
 export const load = (async ({ fetch, setHeaders }): Promise<GeoJSONRoot> => {
+	if (import.meta.env.DEV) return vm as GeoJSONRoot;
 	const query = `[out:json][timeout:25];
 way(id:183555030);
 map_to_area-> .ulis;
