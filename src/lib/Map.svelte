@@ -2,13 +2,12 @@
 	import ml from 'maplibre-gl';
 	import { isDarkmode, mapStyle } from './store';
 	import 'maplibre-gl/dist/maplibre-gl.css';
-	import type { GeoJSONFeature, GeoJSONRoot } from './geojson';
 	import { VendingMachine } from './vendingMachine';
 	import { writable } from 'svelte/store';
 
 	interface Props {
 		here: ml.LngLatLike;
-		pointData: GeoJSONRoot;
+		pointData: GeoJSON.FeatureCollection<GeoJSON.Point, Record<string, string>>;
 	}
 
 	let { here, pointData }: Props = $props();

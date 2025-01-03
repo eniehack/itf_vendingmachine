@@ -1,12 +1,11 @@
 import { error } from '@sveltejs/kit';
-import type { GeoJSONFeature, GeoJSONRoot } from '$lib/geojson';
 import type { PageServerLoad } from './$types';
 import { payload, type OSMObject } from '$lib/overpass';
 import * as v from 'valibot';
 import vm from '$lib/assets/vm.json';
 
-const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
-	const features = nodes.map((elem: OSMObject): GeoJSONFeature => {
+const makeGeoJSON = (nodes: OSMObject[]): GeoJSON.FeatureCollection<GeoJSON.Point> => {
+	const features = nodes.map((elem: OSMObject): GeoJSON.Feature<GeoJSON.Point> => {
 		return {
 			type: 'Feature',
 			properties: Object.keys(elem.tags).reduce<Record<string, string>>((acc, key) => {
@@ -22,11 +21,11 @@ const makeGeoJSON = (nodes: OSMObject[]): GeoJSONRoot => {
 	return {
 		type: 'FeatureCollection',
 		features: features
-	} satisfies GeoJSONRoot;
+	} satisfies GeoJSON.FeatureCollection<GeoJSON.Point>;
 };
 
-export const load = (async ({ fetch, setHeaders }): Promise<GeoJSONRoot> => {
-	if (import.meta.env.DEV) return vm as GeoJSONRoot;
+export const load = (async ({ fetch, setHeaders }): Promise<GeoJSON.FeatureCollection<GeoJSON.Point>> => {
+	if (import.meta.env.DEV) return vm as GeoJSON.FeatureCollection<GeoJSON.Point>;
 	const query = `[out:json][timeout:25];
 way(id:183555030);
 map_to_area-> .ulis;
