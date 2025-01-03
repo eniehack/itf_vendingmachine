@@ -24,7 +24,10 @@ const makeGeoJSON = (nodes: OSMObject[]): GeoJSON.FeatureCollection<GeoJSON.Poin
 	} satisfies GeoJSON.FeatureCollection<GeoJSON.Point>;
 };
 
-export const load = (async ({ fetch, setHeaders }): Promise<GeoJSON.FeatureCollection<GeoJSON.Point>> => {
+export const load = (async ({
+	fetch,
+	setHeaders
+}): Promise<GeoJSON.FeatureCollection<GeoJSON.Point>> => {
 	if (import.meta.env.DEV) return vm as GeoJSON.FeatureCollection<GeoJSON.Point>;
 	const query = `[out:json][timeout:25];
 way(id:183555030);

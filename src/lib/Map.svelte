@@ -14,13 +14,13 @@
 
 	let map: ml.Map;
 	let mapElem = $state<HTMLDivElement>();
-	const vending = writable<string>("")
-	const payment = writable<string>("")
+	const vending = writable<string>('');
+	const payment = writable<string>('');
 	const vendings = [
-		{value: "drinks", title: "飲み物"},
-		{value: "bread", title: "パン"},
-		{value: "ice_cream", title: "アイス"},
-	]
+		{ value: 'drinks', title: '飲み物' },
+		{ value: 'bread', title: 'パン' },
+		{ value: 'ice_cream', title: 'アイス' }
+	];
 
 	$effect(() => {
 		if (typeof mapElem === 'undefined') return;
@@ -85,22 +85,26 @@
         });
         */
 		const vUnsubscriber = vending.subscribe((v) => {
-			let filter = null
-			if (v === "") return;
-			filter = ["==", ["get", "vending"], v] as ml.FilterSpecification
-			if ($payment !== "") {
-				filter = ["all", filter, ["==", ["get", `payment:${$payment}`], "yes"]] as ml.FilterSpecification
+			let filter = null;
+			if (v === '') return;
+			filter = ['==', ['get', 'vending'], v] as ml.FilterSpecification;
+			if ($payment !== '') {
+				filter = [
+					'all',
+					filter,
+					['==', ['get', `payment:${$payment}`], 'yes']
+				] as ml.FilterSpecification;
 			}
-			console.log(filter)
-			map.setFilter("vendingmachine-circle", filter)
-			map.setFilter("vendingmachine-symbol", filter)
+			console.log(filter);
+			map.setFilter('vendingmachine-circle', filter);
+			map.setFilter('vendingmachine-symbol', filter);
 		});
 		return () => {
 			vUnsubscriber();
 			map.remove();
-		}
+		};
 	});
-	$inspect($payment)
+	$inspect($payment);
 </script>
 
 <div id="map-container">
@@ -152,12 +156,12 @@
 <div class="absolute bottom-10 left-2 bg-white rounded-lg p-2">
 	<div>
 		<label for="vending">欲しいものは？</label>
-	<select name="vending" id="vending-selector" bind:value={$vending}>
+		<select name="vending" id="vending-selector" bind:value={$vending}>
 			<option value="">指定なし</option>
-		{#each vendings as v}
-			<option value={v.value}>{v.title}</option>
-		{/each}
-	</select>
+			{#each vendings as v}
+				<option value={v.value}>{v.title}</option>
+			{/each}
+		</select>
 	</div>
 </div>
 
