@@ -8,13 +8,13 @@ interface VendingMachineAsObject {
 }
 
 export class VendingMachine {
-	private tags: Map<string, string>;
+	private tags: Map<string, any>;
 	public lat: number;
 	public lng: number;
 
-	constructor(elem: GeoJSONFeature) {
+	constructor(elem: ml.MapGeoJSONFeature) {
 		this.tags = new Map(Object.entries(elem.properties));
-		[this.lng, this.lat] = elem.geometry.coordinates;
+		if (elem.geometry.type === 'Point') [this.lng, this.lat] = elem.geometry.coordinates;
 	}
 
 	getPosition(): ml.LngLat {

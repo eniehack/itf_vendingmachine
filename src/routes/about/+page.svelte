@@ -8,9 +8,12 @@
 	<section class="p-4">
 		<h1 class="text-xl font-semibold">地図、自販機データの出典</h1>
 		<p class="p-3">
-			地図データ、自動販売機データ共に<a class="text-sky-500 hover:underline" href="https://openstreetmap.org">OpenStreetMap</a
+			地図データ、自動販売機データ共に<a
+				class="text-sky-500 hover:underline"
+				href="https://openstreetmap.org">OpenStreetMap</a
 			>を利用しています。 OSMの提供するデータはODbLの下にライセンスされます。 詳細は<a
-				class="text-sky-500 hover:underline" href="https://www.openstreetmap.org/copyright">こちら</a
+				class="text-sky-500 hover:underline"
+				href="https://www.openstreetmap.org/copyright">こちら</a
 			>をご覧ください
 		</p>
 	</section>
@@ -26,9 +29,12 @@
 			Google Analyticsではそれぞれのアクセスを匿名化した上で収集されます。 Google
 			Analyticsの問題があると感じる場合は、Adblockerの導入やブラウザの設定によりcookieを無効化することで回避できます。
 			Google Analyticsに関しての詳細は<a
-				class="text-sky-500 hover:underline" href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+				class="text-sky-500 hover:underline"
+				href="https://marketingplatform.google.com/about/analytics/terms/jp/"
 				>Google アナリティクス利用規約</a
-			>や<a class="text-sky-500 hover:underline" href="https://policies.google.com/technologies/partner-sites">Google ポリシーと規約</a
+			>や<a
+				class="text-sky-500 hover:underline"
+				href="https://policies.google.com/technologies/partner-sites">Google ポリシーと規約</a
 			>などをご確認ください。
 		</p>
 	</section>

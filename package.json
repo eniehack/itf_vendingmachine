@@ -8,8 +8,8 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"format": "prettier --plugin-search-dir . --check .",
-		"format:fix": "prettier --plugin-search-dir . --write .",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write .",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix ."
 	},
