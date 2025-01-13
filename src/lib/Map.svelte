@@ -4,6 +4,7 @@
 	import 'maplibre-gl/dist/maplibre-gl.css';
 	import { VendingMachine } from './vendingMachine';
 	import { writable } from 'svelte/store';
+	import { base } from '$app/paths';
 
 	interface Props {
 		here: ml.LngLatLike;
@@ -31,6 +32,9 @@
 			zoom: 13
 		});
 		map.on('load', () => {
+			map.loadImage(`${base}/icon-bottle.webp`).then((img) => {
+				map.addImage('icon-bottle', img.data, { sdf: true });
+			});
 			map.addControl(
 				new ml.GeolocateControl({
 					positionOptions: {
@@ -48,12 +52,26 @@
 				id: 'vendingmachine-circle',
 				source: 'vendingmachine',
 				type: 'circle',
-				layout: {},
 				paint: {
-					'circle-color': 'blue',
-					'circle-opacity': 0.8,
-					'circle-stroke-color': 'white',
-					'circle-stroke-width': 1
+					//'circle-color': 'blue',
+					//'circle-opacity': 0.8,
+					//'circle-stroke-color': 'white',
+					//'circle-stroke-width': 1
+					'circle-color': 'white',
+					'circle-radius': 16
+				}
+			});
+			map.addLayer({
+				id: 'vendingmachine-icon',
+				source: 'vendingmachine',
+				type: 'symbol',
+				paint: {
+					'icon-color': 'blue'
+				},
+				layout: {
+					'icon-image': 'icon-bottle',
+					'icon-size': 0.15,
+					'icon-allow-overlap': true
 				}
 			});
 			map.addLayer({
@@ -63,7 +81,7 @@
 				layout: {
 					'text-font': ['Noto Sans Bold'],
 					'text-field': ['format', ['coalesce', ['get', 'brand'], ['get', 'name']]],
-					'text-offset': [0, 1]
+					'text-offset': [0, 1.6]
 				},
 				paint: {
 					'text-halo-width': 2,
@@ -77,7 +95,6 @@
 			const vm = new VendingMachine(feature);
 			new ml.Popup().setLngLat(vm.getPosition()).setHTML(vm.generatePopupText()).addTo(map);
 		});
-
 		/*
         const bottleIcon = icon({
             iconUrl: BottleImage,
