@@ -112,9 +112,9 @@
 					['==', ['get', `payment:${$payment}`], 'yes']
 				] as ml.FilterSpecification;
 			}
-			console.log(filter);
 			map.setFilter('vendingmachine-circle', filter);
 			map.setFilter('vendingmachine-symbol', filter);
+			map.setFilter('vendingmachine-icon', filter);
 		});
 		return () => {
 			vUnsubscriber();
