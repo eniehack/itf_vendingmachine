@@ -32,6 +32,11 @@
 			zoom: 13
 		});
 		const SOURCE_ID = 'vendingmachine';
+		const LAYER = {
+			CIRCLE: 'vendingmachine-circle',
+			ICON: 'vendingmachine-icon',
+			SYMBOL: 'vendingmachine-symbol'
+		};
 		map.on('load', () => {
 			map.loadImage(`${base}/icon-bottle.webp`).then((img) => {
 				map.addImage('icon-bottle', img.data, { sdf: true });
@@ -50,7 +55,7 @@
 				data: pointData
 			});
 			map.addLayer({
-				id: 'vendingmachine-circle',
+				id: LAYER.CIRCLE,
 				source: SOURCE_ID,
 				type: 'circle',
 				paint: {
@@ -63,7 +68,7 @@
 				}
 			});
 			map.addLayer({
-				id: 'vendingmachine-icon',
+				id: LAYER.ICON,
 				source: SOURCE_ID,
 				type: 'symbol',
 				paint: {
@@ -76,7 +81,7 @@
 				}
 			});
 			map.addLayer({
-				id: 'vendingmachine-symbol',
+				id: LAYER.SYMBOL,
 				source: SOURCE_ID,
 				type: 'symbol',
 				layout: {
@@ -90,7 +95,7 @@
 				}
 			});
 		});
-		map.on('click', 'vendingmachine-circle', (e) => {
+		map.on('click', LAYER.CIRCLE, (e) => {
 			if (typeof e.features === 'undefined') return;
 			const feature = e.features[0];
 			const vm = new VendingMachine(feature);
@@ -105,9 +110,9 @@
 		const vUnsubscriber = vending.subscribe((v) => {
 			let filter = null;
 			if (v === '') {
-				map.setFilter('vendingmachine-circle', null);
-				map.setFilter('vendingmachine-symbol', null);
-				map.setFilter('vendingmachine-icon', null);
+				map.setFilter(LAYER.CIRCLE, null);
+				map.setFilter(LAYER.ICON, null);
+				map.setFilter(LAYER.SYMBOL, null);
 				return;
 			}
 			filter = ['==', ['get', 'vending'], v] as ml.FilterSpecification;
@@ -118,9 +123,9 @@
 					['==', ['get', `payment:${$payment}`], 'yes']
 				] as ml.FilterSpecification;
 			}
-			map.setFilter('vendingmachine-circle', filter);
-			map.setFilter('vendingmachine-symbol', filter);
-			map.setFilter('vendingmachine-icon', filter);
+			map.setFilter(LAYER.CIRCLE, filter);
+			map.setFilter(LAYER.ICON, filter);
+			map.setFilter(LAYER.SYMBOL, filter);
 		});
 		return () => {
 			vUnsubscriber();
