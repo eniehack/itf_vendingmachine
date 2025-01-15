@@ -103,7 +103,12 @@
         */
 		const vUnsubscriber = vending.subscribe((v) => {
 			let filter = null;
-			if (v === '') return;
+			if (v === '') {
+				map.setFilter('vendingmachine-circle', null);
+				map.setFilter('vendingmachine-symbol', null);
+				map.setFilter('vendingmachine-icon', null);
+				return;
+			}
 			filter = ['==', ['get', 'vending'], v] as ml.FilterSpecification;
 			if ($payment !== '') {
 				filter = [
