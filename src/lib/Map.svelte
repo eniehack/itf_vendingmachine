@@ -41,6 +41,12 @@
 			map.loadImage(`${base}/icon-bottle.webp`).then((img) => {
 				map.addImage('icon-bottle', img.data, { sdf: true });
 			});
+			map.loadImage(`${base}/icon-baguette.webp`).then((img) => {
+				map.addImage('icon-bread', img.data, { sdf: true });
+			});
+			map.loadImage(`${base}/icon-icecream.webp`).then((img) => {
+				map.addImage('icon-icecream', img.data, { sdf: true });
+			});
 			map.addControl(
 				new ml.GeolocateControl({
 					positionOptions: {
@@ -72,10 +78,30 @@
 				source: SOURCE_ID,
 				type: 'symbol',
 				paint: {
-					'icon-color': 'blue'
+					'icon-color': [
+						'match',
+						['get', 'vending'],
+						'drinks',
+						'blue',
+						'bread',
+						'orange',
+						'ice_cream',
+						'red',
+						'blue'
+					]
 				},
 				layout: {
-					'icon-image': 'icon-bottle',
+					'icon-image': [
+						'match',
+						['get', 'vending'],
+						'drinks',
+						'icon-bottle',
+						'bread',
+						'icon-bread',
+						'ice_cream',
+						'icon-icecream',
+						'icon-bottle'
+					],
 					'icon-size': 0.15,
 					'icon-allow-overlap': true
 				}
