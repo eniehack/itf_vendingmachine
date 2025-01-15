@@ -17,10 +17,27 @@
 	let mapElem = $state<HTMLDivElement>();
 	const vending = writable<string>('');
 	const payment = writable<string>('');
+	const VENDING = {
+		DRINK: {
+			v: 'drinks',
+			title: '飲み物',
+			icon: { id: 'icon-bottle', file: 'icon-bottle.webp' }
+		},
+		BREAD: {
+			v: 'bread',
+			title: 'パン',
+			icon: { id: 'icon-bread', file: 'icon-baguette.webp' }
+		},
+		ICE_CREAM: {
+			v: 'ice_cream',
+			title: 'アイス',
+			icon: { id: 'icon-icecream', file: 'icon-icecream.webp' }
+		}
+	} as const;
 	const vendings = [
-		{ value: 'drinks', title: '飲み物' },
-		{ value: 'bread', title: 'パン' },
-		{ value: 'ice_cream', title: 'アイス' }
+		{ value: VENDING.DRINK.v, title: VENDING.DRINK.title },
+		{ value: VENDING.BREAD.v, title: VENDING.BREAD.title },
+		{ value: VENDING.ICE_CREAM.v, title: VENDING.ICE_CREAM.title }
 	];
 
 	$effect(() => {
@@ -32,14 +49,14 @@
 			zoom: 13
 		});
 		map.on('load', () => {
-			map.loadImage(`${base}/icon-bottle.webp`).then((img) => {
-				map.addImage('icon-bottle', img.data, { sdf: true });
+			map.loadImage(`${base}/${VENDING.DRINK.icon.file}`).then((img) => {
+				map.addImage(VENDING.DRINK.icon.id, img.data, { sdf: true });
 			});
-			map.loadImage(`${base}/icon-baguette.webp`).then((img) => {
-				map.addImage('icon-bread', img.data, { sdf: true });
+			map.loadImage(`${base}/${VENDING.BREAD.icon.file}`).then((img) => {
+				map.addImage(VENDING.BREAD.icon.id, img.data, { sdf: true });
 			});
-			map.loadImage(`${base}/icon-icecream.webp`).then((img) => {
-				map.addImage('icon-icecream', img.data, { sdf: true });
+			map.loadImage(`${base}/${VENDING.ICE_CREAM.icon.file}`).then((img) => {
+				map.addImage(VENDING.ICE_CREAM.icon.id, img.data, { sdf: true });
 			});
 			map.addControl(
 				new ml.GeolocateControl({
@@ -75,26 +92,26 @@
 					'icon-color': [
 						'match',
 						['get', 'vending'],
-						'drinks',
+						VENDING.DRINK.v,
 						'blue',
-						'bread',
+						VENDING.BREAD.v,
 						'orange',
-						'ice_cream',
+						VENDING.ICE_CREAM.v,
 						'red',
-						'blue'
+						'blue' // fallback
 					]
 				},
 				layout: {
 					'icon-image': [
 						'match',
 						['get', 'vending'],
-						'drinks',
-						'icon-bottle',
-						'bread',
-						'icon-bread',
-						'ice_cream',
-						'icon-icecream',
-						'icon-bottle'
+						VENDING.DRINK.v,
+						VENDING.DRINK.icon.id,
+						VENDING.BREAD.v,
+						VENDING.BREAD.icon.id,
+						VENDING.ICE_CREAM.v,
+						VENDING.ICE_CREAM.icon.id,
+						VENDING.DRINK.icon.id // fallback
 					],
 					'icon-size': 0.15,
 					'icon-allow-overlap': true
