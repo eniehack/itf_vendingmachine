@@ -31,6 +31,7 @@
 			center: here,
 			zoom: 13
 		});
+		const SOURCE_ID = 'vendingmachine';
 		map.on('load', () => {
 			map.loadImage(`${base}/icon-bottle.webp`).then((img) => {
 				map.addImage('icon-bottle', img.data, { sdf: true });
@@ -44,13 +45,13 @@
 				})
 			);
 			map.addControl(new ml.NavigationControl());
-			map.addSource('vendingmachine', {
+			map.addSource(SOURCE_ID, {
 				type: 'geojson',
 				data: pointData
 			});
 			map.addLayer({
 				id: 'vendingmachine-circle',
-				source: 'vendingmachine',
+				source: SOURCE_ID,
 				type: 'circle',
 				paint: {
 					//'circle-color': 'blue',
@@ -63,7 +64,7 @@
 			});
 			map.addLayer({
 				id: 'vendingmachine-icon',
-				source: 'vendingmachine',
+				source: SOURCE_ID,
 				type: 'symbol',
 				paint: {
 					'icon-color': 'blue'
@@ -76,7 +77,7 @@
 			});
 			map.addLayer({
 				id: 'vendingmachine-symbol',
-				source: 'vendingmachine',
+				source: SOURCE_ID,
 				type: 'symbol',
 				layout: {
 					'text-font': ['Noto Sans Bold'],
