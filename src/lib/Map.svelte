@@ -26,7 +26,7 @@
 		BREAD: {
 			value: 'bread',
 			title: 'パン',
-			icon: { id: 'icon-bread', file: 'icon-baguette.webp', color: 'yellow' }
+			icon: { id: 'icon-bread', file: 'icon-baguette.webp', color: 'orange' }
 		},
 		ICE_CREAM: {
 			value: 'ice_cream',
