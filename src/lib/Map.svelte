@@ -18,27 +18,22 @@
 	const vending = writable<string>('');
 	const payment = writable<string>('');
 	const VENDING = {
-		DRINK: {
-			v: 'drinks',
+		DRINKS: {
+			value: 'drinks',
 			title: '飲み物',
 			icon: { id: 'icon-bottle', file: 'icon-bottle.webp' }
 		},
 		BREAD: {
-			v: 'bread',
+			value: 'bread',
 			title: 'パン',
 			icon: { id: 'icon-bread', file: 'icon-baguette.webp' }
 		},
 		ICE_CREAM: {
-			v: 'ice_cream',
+			value: 'ice_cream',
 			title: 'アイス',
 			icon: { id: 'icon-icecream', file: 'icon-icecream.webp' }
 		}
 	} as const;
-	const vendings = [
-		{ value: VENDING.DRINK.v, title: VENDING.DRINK.title },
-		{ value: VENDING.BREAD.v, title: VENDING.BREAD.title },
-		{ value: VENDING.ICE_CREAM.v, title: VENDING.ICE_CREAM.title }
-	];
 
 	$effect(() => {
 		if (typeof mapElem === 'undefined') return;
@@ -55,8 +50,8 @@
 			SYMBOL: 'vendingmachine-symbol'
 		};
 		map.on('load', () => {
-			map.loadImage(`${base}/${VENDING.DRINK.icon.file}`).then((img) => {
-				map.addImage(VENDING.DRINK.icon.id, img.data, { sdf: true });
+			map.loadImage(`${base}/${VENDING.DRINKS.icon.file}`).then((img) => {
+				map.addImage(VENDING.DRINKS.icon.id, img.data, { sdf: true });
 			});
 			map.loadImage(`${base}/${VENDING.BREAD.icon.file}`).then((img) => {
 				map.addImage(VENDING.BREAD.icon.id, img.data, { sdf: true });
@@ -98,11 +93,11 @@
 					'icon-color': [
 						'match',
 						['get', 'vending'],
-						VENDING.DRINK.v,
+						VENDING.DRINKS.value,
 						'blue',
-						VENDING.BREAD.v,
+						VENDING.BREAD.value,
 						'orange',
-						VENDING.ICE_CREAM.v,
+						VENDING.ICE_CREAM.value,
 						'red',
 						'blue' // fallback
 					]
@@ -111,13 +106,13 @@
 					'icon-image': [
 						'match',
 						['get', 'vending'],
-						VENDING.DRINK.v,
-						VENDING.DRINK.icon.id,
-						VENDING.BREAD.v,
+						VENDING.DRINKS.value,
+						VENDING.DRINKS.icon.id,
+						VENDING.BREAD.value,
 						VENDING.BREAD.icon.id,
-						VENDING.ICE_CREAM.v,
+						VENDING.ICE_CREAM.value,
 						VENDING.ICE_CREAM.icon.id,
-						VENDING.DRINK.icon.id // fallback
+						VENDING.DRINKS.icon.id // fallback
 					],
 					'icon-size': 0.15,
 					'icon-allow-overlap': true
@@ -229,7 +224,7 @@
 		<label for="vending">欲しいものは？</label>
 		<select name="vending" id="vending-selector" bind:value={$vending}>
 			<option value="">指定なし</option>
-			{#each vendings as v}
+			{#each Object.values(VENDING) as v}
 				<option value={v.value}>{v.title}</option>
 			{/each}
 		</select>
