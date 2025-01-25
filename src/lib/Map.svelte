@@ -21,17 +21,17 @@
 		DRINKS: {
 			value: 'drinks',
 			title: '飲み物',
-			icon: { id: 'icon-bottle', file: 'icon-bottle.webp' }
+			icon: { id: 'icon-bottle', file: 'icon-bottle.webp', color: 'blue' }
 		},
 		BREAD: {
 			value: 'bread',
 			title: 'パン',
-			icon: { id: 'icon-bread', file: 'icon-baguette.webp' }
+			icon: { id: 'icon-bread', file: 'icon-baguette.webp', color: 'yellow' }
 		},
 		ICE_CREAM: {
 			value: 'ice_cream',
 			title: 'アイス',
-			icon: { id: 'icon-icecream', file: 'icon-icecream.webp' }
+			icon: { id: 'icon-icecream', file: 'icon-icecream.webp', color: 'red' }
 		}
 	} as const;
 
@@ -94,11 +94,11 @@
 						'match',
 						['get', 'vending'],
 						VENDING.DRINKS.value,
-						'blue',
+						VENDING.DRINKS.icon.color,
 						VENDING.BREAD.value,
-						'orange',
+						VENDING.BREAD.icon.color,
 						VENDING.ICE_CREAM.value,
-						'red',
+						VENDING.ICE_CREAM.icon.color,
 						'blue' // fallback
 					]
 				},
